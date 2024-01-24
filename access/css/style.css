@@ -1,0 +1,78 @@
+/* BEGIN HEADER */
+.header {
+    background-color: red;
+    height: var(--header-height);
+}
+
+.header__container {
+    width: 100%;    
+    height: var(--header-height);
+    display: flex;
+}
+
+.header__left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header__left--category {
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.header__left--category p {
+    font-size: 16px;
+    color: var(--color-bold);
+}
+
+.header__center {
+    width: 20%;
+    display: flex;
+}
+
+.header__center--logo {
+    margin: auto;
+}
+
+.header__right {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__right > div:nth-child(2),
+.header__right > div:nth-child(3),
+.header__right > div:nth-child(4) {
+    margin: 0 12px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__right--search {
+    position: relative;
+}
+
+.header__right--search i {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    padding-right: 8px;
+    border-right: 1px solid #ccc;
+    font-size: 12px;
+    color: var(--color-medium);
+}
+
+.header__right--search input {
+    padding: 4px 4px 4px 38px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: var(--color-bold);
+    font-size: 14px;
+}

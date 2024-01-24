@@ -1,6 +1,10 @@
 :root {
     --header-height: 60px;
+    
     --header-color: red;
+    --color-bold: #221F20;
+    --color-medium: #727272;
+    --color-white: #fff;
 }
 
 * {
