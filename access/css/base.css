@@ -1,9 +1,10 @@
 :root {
     --header-height: 60px;
     
-    --header-color: red;
+    --header-color: rgba(255, 255, 255, 0.5);
     --color-bold: #221F20;
     --color-medium: #727272;
+    --color-pale: #b2b2b2;
     --color-white: #fff;
 }
 
