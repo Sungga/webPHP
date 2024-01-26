@@ -20,3 +20,7 @@
     width: 1380px;
     margin: auto;
 }
+
+a {
+    text-decoration: none;
+}
