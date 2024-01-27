@@ -24,3 +24,13 @@
 a {
     text-decoration: none;
 }
+
+.path {
+    margin: 40px 0;
+}
+
+.path a,
+.path span {
+    color: #000;
+    font-size: 14px;
+}

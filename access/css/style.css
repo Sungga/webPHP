@@ -343,3 +343,118 @@
     background-color: #000;
     color: #fff;
 }
+
+/* -----------------------------------------------------<< LIST PRODUCT >>----------------------------------------------------- */
+.list-product__container {
+    margin: 40px 0;
+    display: flex;
+}
+
+.list-product__left {
+    width: 20%;
+    margin-right: 20px;
+}
+
+.list-product__left--item {
+    padding: 20px 8px 20px 0;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.list-product__left--item {
+    color: var(--color-bold);
+}
+
+.list-product__left--item-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-product__left--item-bottom {
+    display: none;
+    flex-wrap: wrap;
+}
+
+.list-product__size {
+    /* margin-top: 16px; */
+
+}
+
+.list-product__size--item {
+    position: relative;
+    margin-right: 20px;
+    margin-top: 16px;
+}
+
+.list-product__size input {
+    /* transform: scale(2); */
+    width: 40px;
+    height: 30px;
+    border-radius: 12px 2px 12px 2px;
+    cursor: pointer;
+
+    appearance: none; /* Loại bỏ giao diện mặc định của checkbox */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    outline: none; /* Loại bỏ đường viền khi được chọn */
+    border: 1px solid #ccc; /* Đặt kiểu đường viền và màu sắc */
+}
+
+.list-product__size input:checked {
+    border: 1px solid #000;
+}
+
+.list-product__size span {
+    color: var(--color-bold);
+    font-size: 12px;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: -1;
+}
+
+.list-product__color--item {
+    margin-top: 16px;
+
+    position: relative;
+    margin-right: 4px;
+}
+
+.list-product__color--item input {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    appearance: none; /* Loại bỏ giao diện mặc định của checkbox */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    outline: none; /* Loại bỏ đường viền khi được chọn */
+    border: 3px solid #ccc; /* Đặt kiểu đường viền và màu sắc */
+}
+
+.list-product__color--item input:checked {
+    border: 3px solid var(--color-bold);
+}
+
+.list-product__color--item p {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    z-index: -1;
+}
+
+.list-product__range {
+    margin-top: 16px;
+}
+
+.list-product__right {
+    width: 80%;
+}

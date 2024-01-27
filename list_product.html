@@ -126,7 +126,118 @@
     <div class="header__footer"></div>
 
     <!-- BEGIN LIST PRODUCT -->
-    <section id="list__product"></section>
+    <section id="list-product">
+        <div class="grid">
+            <div class="path">
+                <a href="./index.html">Trang chủ</a>
+                <span>&#8594;</span>
+                <a href="">Nữ</a>
+                <span>&#8594;</span>
+                <a href="">Áo</a>
+            </div>
+            <div class="list-product__container">
+                <div class="list-product__left">
+                    <div class="list-product__left--item">
+                        <div class="list-product__left--item-top">
+                            <p>SIZE</p>
+                            <p>+</p>
+                            <p style="display: none;">-</p>
+                        </div>
+                        <div class="list-product__left--item-bottom list-product__size">
+                            <div class="list-product__size--item">
+                                <input type="checkbox" name="size-s" id="">
+                                <span>S</span>
+                            </div>
+                            <div class="list-product__size--item">
+                                <input type="checkbox" name="size-m" id="">
+                                <span>M</span>
+                            </div>
+                            <div class="list-product__size--item">
+                                <input type="checkbox" name="size-l" id="">
+                                <span>L</span>
+                            </div>
+                            <div class="list-product__size--item">
+                                <input type="checkbox" name="size-xl" id="">
+                                <span>XL</span>
+                            </div>
+                            <div class="list-product__size--item">
+                                <input type="checkbox" name="size-xxl" id="">
+                                <span>XXL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-product__left--item">
+                        <div class="list-product__left--item-top">
+                            <p>Màu sắc</p>
+                            <p>+</p>
+                            <p style="display: none;">-</p>
+                        </div>
+                        <div class="list-product__left--item-bottom list-product__color">
+                            <div class="list-product__color--item">
+                                <input type="checkbox" name="color-yellow" id="">
+                                <p style="background-color: yellow;"></p>
+                            </div>
+                            <div class="list-product__color--item">
+                                <input type="checkbox" name="color-green" id="">
+                                <p style="background-color: green;"></p>
+                            </div>
+                            <div class="list-product__color--item">
+                                <input type="checkbox" name="color-pink" id="">
+                                <p style="background-color: pink;"></p>
+                            </div>
+                            <div class="list-product__color--item">
+                                <input type="checkbox" name="color-red" id="">
+                                <p style="background-color: red;"></p>
+                            </div>
+                            <div class="list-product__color--item">
+                                <input type="checkbox" name="color-gray" id="">
+                                <p style="background-color: gray;"></p>
+                            </div>
+                            <div class="list-product__color--item">
+                                <input type="checkbox" name="color-white" id="">
+                                <p style="background-color: white;"></p>
+                            </div>
+                            <div class="list-product__color--item">
+                                <input type="checkbox" name="color-brown" id="">
+                                <p style="background-color: brown;"></p>
+                            </div>
+                            <div class="list-product__color--item">
+                                <input type="checkbox" name="color-brown" id="">
+                                <p style="background-color: black;"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-product__left--item">
+                        <div class="list-product__left--item-top">
+                            <p>Mức giá</p>
+                            <p>+</p>
+                            <p style="display: none;">-</p>
+                        </div>
+                        <div class="list-product__left--item-bottom list-product__range">
+                            <!-- <input type="range" name="" id=""> -->
+                            <p id="rangeValue" style="width: 100%; text-align: center;">0</p>
+                            <input type="range" id="myRange" min="0" max="10000000" step="1" value="0" style="width: 100%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="list-product__right">
+                    <div class="list-product__right--top">
+                        <h3>Áo</h3>
+                        <select>
+                            <option value="moinhat">Mới nhất</option>
+                            <option value="moinhat">Cũ nhất</option>
+                            <option value="moinhat">Giá cao đến thấp</option>
+                            <option value="moinhat">Giá thấp đến cao</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- BEGIN FOOTER -->
     <section id="footer">
@@ -186,3 +297,6 @@
     </section>
 </body>
 </html>
+
+
+<script src="./access/js/js_list_product.js"></script>
