@@ -33,6 +33,7 @@ a {
 .path span {
     color: #000;
     font-size: 14px;
+    margin-right: 8px;
 }
 
 li {

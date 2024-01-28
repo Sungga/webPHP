@@ -9,12 +9,12 @@ document.addEventListener("DOMContentLoaded", function() {
             // toggle hien thi/an itemBottom
             if (itemBottom.style.display === 'flex') {
                 itemBottom.style.display = 'none';
-                itemTop.querySelector('p:last-child').style.display = 'block'; // hien thi dau "-"
-                itemTop.querySelector('p:nth-child(2)').style.display = 'none'; // an dau "+"
+                itemTop.querySelector('p:last-child').style.display = 'none'; // hien thi dau "-"
+                itemTop.querySelector('p:nth-child(2)').style.display = 'block'; // an dau "+"
             } else {
                 itemBottom.style.display = 'flex';
-                itemTop.querySelector('p:last-child').style.display = 'none'; // an dau "-"
-                itemTop.querySelector('p:nth-child(2)').style.display = 'block'; // hien thi dau "+"
+                itemTop.querySelector('p:last-child').style.display = 'block'; // an dau "-"
+                itemTop.querySelector('p:nth-child(2)').style.display = 'none'; // hien thi dau "+"
             }
         });
     });
