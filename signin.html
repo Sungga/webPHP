@@ -126,136 +126,25 @@
     <div class="header__footer"></div>
 
     <!-- BEGIN SLIDER -->
-    <div id="product">
+    <section class="signin">
         <div class="grid">
-            <div class="path">
-                <a href="./index.html">Trang chủ</a>
-                <span>&#8594;</span>
-                <a href="">Nữ</a>
-                <span>&#8594;</span>
-                <a href="">Áo</a>
-                <span>&#8594;</span>
-                <a href="">Áo khoác cổ lọ</a>
-            </div>
-
-            <div class="product__container">
-                <div class="product__left">
-                    <div class="product__img--big">
-                        <img src="./access/img/product1.jpg" alt="">
-                    </div>
-                    <div class="product__img--small">
-                        <span class="product__btn--up">&#8743;</span>
-                        <div class="product__img--small-img">
-                            <img src="./access/img/product1.jpg" alt="">
-                            <img src="./access/img/product2.jpg" alt="">
-                            <img src="./access/img/product1.jpg" alt="">
-                            <img src="./access/img/product2.jpg" alt="">
-                            <img src="./access/img/product2.jpg" alt="">
-                        </div>
-                        <span class="product__btn--down">&#8744;</span>
-                    </div>
+            <div class="sign__container">
+                <h1>Đăng nhập</h1>
+                <div class="sign__input">
+                    <p>Tài khoản</p>
+                    <input type="text" name="account" id="" placeholder="Tài khoản">
                 </div>
-                <div class="product__right">
-                    <div class="product__right--top">
-                        <div class="product__name">
-                            <h1>SET BỘ QUIETLUXURY - ÁO BLAZER SUÔNG VÀ QUẦN BAGGY</h1>
-                        </div>
-                        <div class="product__price">
-                            <strong>1.490.000₫</strong>
-                            <span>2.980.000₫</span>
-                        </div>
-                        <div class="product__color">
-                            <p>Màu sắc: Vàng</p>
-                            <div class="product__color--item">
-                                <!-- backend nho them class checked de tu dong chon mau dau tien khi mo web -->
-                                <input type="radio" id="yellow" name="color" checked>
-                                <label class="yellow" for="yellow"></label>
-    
-                                <input type="radio" id="green" name="color">
-                                <label class="green" for="green"></label>
-    
-                                <input type="radio" id="pink" name="color">
-                                <label class="pink" for="pink"></label>
-    
-                                <input type="radio" id="red" name="color">
-                                <label class="red" for="red"></label>
-    
-                                <input type="radio" id="gray" name="color">
-                                <label class="gray" for="gray"></label>
-    
-                                <input type="radio" id="white" name="color">
-                                <label class="white" for="white"></label>
-    
-                                <input type="radio" id="brown" name="color">
-                                <label class="brown" for="brown"></label>
-    
-                                <input type="radio" id="black" name="color">
-                                <label class="black" for="black"></label>
-                            </div>
-                        </div>
-                        <div class="product__size">
-                            <input type="radio" name="size" id="s">
-                            <label for="s">S</label>
-    
-                            <input type="radio" name="size" id="m">
-                            <label for="m">M</label>
-    
-                            <input type="radio" name="size" id="l">
-                            <label for="l">L</label>
-    
-                            <input type="radio" name="size" id="xl">
-                            <label for="xl">XL</label>
-    
-                            <input type="radio" name="size" id="xxl">
-                            <label for="xxl">XXL</label>
-                        </div>
-                        <div class="product__quantity">
-                            <label for="numberInput">Số lượng:</label>
-                            <div class="product__quantity--input">
-                                <input type="number" id="numberInput" name="numberInput" value="0" min="0" max="33" step="1">
-    
-                                <span class="decrement" onclick="decrement()">-</span>
-                                <span class="increment" onclick="increment()">+</span>
-                            </div>
-                        </div>
-                        <div class="product__action">
-                            <input type="submit" value="Thêm vào giỏ" class="product__action--cart">
-                            <input type="submit" value="Mua hàng" class="product__action--buy">
-                        </div>
-                    </div>
-                    <div class="product__right--bottom">
-                        <div class="product__right--bottom-title"><h1>Giới thiệu</h1></div>
-                        <p>
-                            Môt chiếc áo sơ mi với gam màu tươi tắn sẽ giúp nàng hoàn thiện bộ trang phục chỉn chu cho bất kì sự kiện nào. Thiết kế cơ bản nhưng không hề nhàm chán khi có thể mix&match với nhiều items khác nhau để tôn lên vẻ đẹp của người mặc.
-                        </p>
-                        <p>
-                            Đến với thiết kế sơ mi lần này, IVY moda giữ nguyên dáng cơ bản, được cách điệu thêm chi tiết đính hoa ở phần túi trước ngực. Áo có khuy cài nhỏ màu bạc. Chất liệu là lụa trơn cao cấp, mềm  mại, tạo cảm giác mặc thoải mái. 
-                        </p>
-                        <p><strong>Thông tin mẫu:</strong></p>
-                        <p>
-                            <strong>Chiều cao:</strong> 167 cm
-                        </p>
-                        <p>
-                            <strong>Cân nặng:</strong> 50 kg
-                        </p>
-                        <p>
-                            <strong>Số đo 3 vòng:</strong> 83-65-93 cm
-                        </p>
-                        <p>
-                            Mẫu mặc size M
-                        </p>
-                        <p>
-                            Lưu ý: Màu sắc sản phẩm thực tế sẽ có sự chênh lệch nhỏ so với ảnh do điều kiện ánh sáng khi chụp và màu sắc hiển thị qua màn hình máy tính/ điện thoại.
-                        </p>
-                    </div>
-                    <div class="product__right--collapsible">
-                        <i class="fas fa-solid fa-chevron-down" onclick="toggleDescriptionExpansion()"></i>
-                    </div>
-                    <!--  -->
+                <div class="sign__input">
+                    <p>Mật khẩu</p>
+                    <input type="password" name="password" id="" placeholder="Mật khẩu">
+                </div>
+                <div class="sign__input">
+                    <span>Nếu chưa có tài khoản, hãy <a href="#">đăng ký!</a></span>
+                    <input type="submit" value="Đăng nhập">                    
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- BEGIN FOOTER -->
     <section id="footer">
@@ -314,5 +203,4 @@
         </div>
     </section>
 </body>
-<script src="./access/js/js_product.js"></script>
 </html>

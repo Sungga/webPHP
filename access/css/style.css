@@ -962,3 +962,272 @@ input[name="size"]:checked + label {
     cursor: pointer;
     transition: all 1s ease-in-out;
 }
+
+
+/* ----------------------------------------------<< SIGN IN >>---------------------------------------------------------------- */
+.signin {
+    margin: 50px 0;
+}
+
+.sign__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sign__container h1 {
+    font-size: 32px;
+    color: var(--color-bold);
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.sign__input {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 30%;
+}
+
+.sign__input p {
+    font-size: 14px;
+    color: var(--color-bold);
+    margin-bottom: 8px;
+}
+
+.sign__input span {
+    font-size: 12px;
+    color: var(--color-medium);
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+.sign__input a {
+    font-size: 12px;
+}
+
+.sign__input input {
+    outline: none;
+    border: 1px solid var(--color-bold);
+    padding: 12px 20px;
+    border-radius: 16px;
+    background-color: var(--color-white);
+    font-size: 14px;
+}
+
+.sign__input input[type="submit"] {
+    background-color: var(--color-bold);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+/* --------------------------------------<< CART >>------------------------------------------------------------ */
+.cart {
+    margin: 100px 0;
+}
+
+.location {
+    margin: auto;
+    width: 80%;
+    border-top: 1px solid var(--color-bold);
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+.location i {
+    position: absolute;
+    top: -20px;
+    border: 1px solid var(--color-bold);
+    padding: 12px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+}
+
+.location i:nth-child(1) {
+    left: 0;
+    background-color: #00ffe5;
+}
+
+.location i:nth-child(2) {
+    left: 48%;
+}
+
+.location i:nth-child(3) {
+    right: 0;
+}
+
+.pay-money .location i:nth-child(2) {
+    background-color: #00ffe5;
+}
+
+.success .location i:nth-child(2),
+.success .location i:nth-child(3) {
+    background-color: #00ffe5;
+}
+
+.cart__container {
+    display: flex;
+}
+
+.cart__left {
+    width: 70%;
+    border-collapse: collapse;
+}
+
+.cart__left td,
+.cart__left th {
+    border: 1px solid var(--color-bold);
+    padding: 8px;
+}
+
+.cart__left tr td:nth-child(1) {
+    padding: 0;
+}
+
+.cart__left img {
+    width: 200px;
+}
+
+.cart__left a {
+    color: #000;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.cart__right {
+    width: 30%;
+    padding-left: 20px;
+}
+
+.cart__right h1 {
+    font-size: 20px;
+    color: var(--color-bold);
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid var(--color-pale);
+}
+
+.cart__right div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.cart__right--input {
+    margin-top: 20px;
+    padding-top: 12px;
+    border-top: 1px solid var(--color-pale);
+}
+
+.cart__right--input input {
+    width: 100%;
+    padding: 12px 12px;
+    outline: none;
+    border: 1px solid var(--color-bold);
+    background-color: var(--color-bold);
+    color: var(--color-white);
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.cart__right--input input:hover {
+    background-color: var(--color-white);
+    color: var(--color-bold);
+}
+
+/* ---------------------------------------------------<< PAY MONEY >>----------------------------------------------- */
+.pay-money {
+    margin: 100px 0;
+}
+
+.pay-money__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pay-money__container h1 {
+    font-size: 16px;
+    color: var(--color-bold);
+    margin-bottom: 20px;
+}
+
+.pay-money__container div {
+    margin-bottom: 12px;
+}
+
+.pay-money__container div label {
+    font-size: 16px;
+    color: var(--color-bold);
+}
+
+.pay-money__container input {
+    padding: 8px 24px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid var(--color-bold);
+    background-color: var(--color-bold);
+    color: var(--color-white);
+    border-radius: 14px 0;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.pay-money__container input:hover {
+    background-color: var(--color-white);
+    color: var(--color-bold);
+}
+
+/* --------------------------------------------<< SUCCESS >>--------------------------------------------------- */
+.success {
+    margin: 100px 0;
+}
+
+.success__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success__container h1 {
+    font-size: 24px;
+    color: var(--color-bold);
+}
+
+/* --------------------------------------------<< ORDERS >>--------------------------------------------------- */
+.orders {
+    margin: 100px 0;
+}
+
+.orders table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders td,
+.orders th {
+    border: 1px solid var(--color-bold);
+}
+
+.orders img {
+    width: 200px;
+}
+
+.orders a {
+    color: var(--color-bold);
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
