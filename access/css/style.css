@@ -1054,19 +1054,29 @@ input[name="size"]:checked + label {
 }
 
 .location i:nth-child(2) {
-    left: 48%;
+    left: 32%;
 }
 
 .location i:nth-child(3) {
+    left: 65%;
+}
+
+.location i:nth-child(4) {
     right: 0;
 }
 
-.pay-money .location i:nth-child(2) {
+.location-customer i:nth-child(2) {
+    background-color: #00ffe5;
+}
+
+.pay-money .location i:nth-child(2),
+.pay-money .location i:nth-child(3) {
     background-color: #00ffe5;
 }
 
 .success .location i:nth-child(2),
-.success .location i:nth-child(3) {
+.success .location i:nth-child(3),
+.success .location i:nth-child(4) {
     background-color: #00ffe5;
 }
 
@@ -1144,6 +1154,56 @@ input[name="size"]:checked + label {
 .cart__right--input input:hover {
     background-color: var(--color-white);
     color: var(--color-bold);
+}
+
+/* ---------------------------------------------------<< LOCATION CUSTOMER >>----------------------------------------------- */
+.location-customer {
+    margin: 100px 0;
+}
+
+.location-customer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-customer__container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.location-customer__container div {
+    width: 30%;
+}
+
+.location-customer__container p {
+    font-size: 14px;
+    color: var(--color-bold);
+}
+
+.location-customer__container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    border: 1px solid var(--color-bold);
+}
+
+.location-customer__container input[type="submit"] {
+    padding: 12px;
+    background-color: var(--color-bold);
+    color: var(--color-white);
+    outline: none;
+    border: 1px solid var(--color-bold);
+
+    transition: all 0.3s ease-in-out;
+}
+
+.location-customer__container input[type="submit"]:hover {
+    background-color: var(--color-white);
+    color: var(--color-bold);
+    cursor: pointer;
 }
 
 /* ---------------------------------------------------<< PAY MONEY >>----------------------------------------------- */
@@ -1230,4 +1290,135 @@ input[name="size"]:checked + label {
     font-size: 20px;
     width: 100%;
     text-align: center;
+}
+
+/* ----------------------------------------------<< ADMIN TOP >>-------------------------------------------------------- */
+#admin__top {
+    width: 100%;
+    height: 80px;
+    background-color: var(--color-bold);
+
+    position: fixed;
+}
+
+.admin__top--container {
+    display: flex;
+}
+
+.admin__top--container div {
+    width: calc(100% / 3);
+    height: 80px;
+    display: flex;
+}
+
+.admin__top--container div a {
+    width: 100%;
+    text-align: center;
+    line-height: 80px;
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+}
+
+/* ----------------------------------------------<< ORDERS MANAGEMENT >>-------------------------------------------------------- */
+#orders__management {
+    padding-top: 40px;
+    background-color: var(--color-pale);
+    width: 100%;
+}
+
+.order__management--container {
+    display: flex;
+    flex-direction: column;
+}
+
+#orders__management input[type="submit"] {
+    width: 30%;
+    margin: auto auto 40px;
+    padding: 12px;
+    outline: none;
+    border: 1px solid var(--color-bold);
+    background-color: var(--color-bold);
+    color: var(--color-white);
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+}
+
+#orders__management input[type="submit"]:hover {
+    background-color: var(--color-white);
+    color: var(--color-bold);
+}
+
+#orders__management table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#orders__management th,
+#orders__management td {
+    border: 1px solid var(--color-bold);
+}
+
+#orders__management img {
+    width: 200px;
+}
+
+/* ----------------------------------------------<< ADD CATEGORY >>-------------------------------------------------------- */
+.add-category {
+    background-color: var(--color-pale);
+}
+
+.add-category__container {
+    display: flex;
+}
+
+.admin__left {
+    width: 20%;
+    background-color: var(--color-white);
+}
+
+.admin__left h1 {
+    padding-top: 50px;
+    color: var(--color-bold);
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.admin__left li {
+    margin: 12px 0 0 50px;
+}
+
+.admin__left a {
+    color: var(--color-bold);
+}
+
+.admin__right {
+    width: 80%;
+    padding: 50px 0 0 50px;
+}
+
+.admin__right input {
+    padding: 8px 12px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid var(--color-bold);
+    color: var(--color-bold);
+    background-color: var(--color-white);
+}
+
+.admin__right input[type="submit"] {
+    background-color: var(--color-bold);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+/* ----------------------------------------------<< LIST CATEGORY >>-------------------------------------------------------- */
+.admin__right table {
+    border-collapse: collapse;
+}
+
+.admin__right th,
+.admin__right td {
+    border: 1px solid var(--color-bold);
+    padding: 8px;
 }
