@@ -39,3 +39,56 @@ a {
 li {
     list-style: none;
 }
+
+.yellow,
+.green,
+.pink,
+.red,
+.gray,
+.white,
+.brown,
+.black {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+
+
+
+input[type="radio"] + label.yellow {
+    background-color: yellow;
+}
+
+input[type="radio"] + label.green {
+    background-color: green;
+}
+
+input[type="radio"] + label.pink {
+    background-color: pink;
+}
+
+input[type="radio"] + label.red {
+    background-color: red;
+}
+
+input[type="radio"] + label.gray {
+    background-color: gray;
+}
+
+input[type="radio"] + label.white {
+    background-color: white;
+}
+
+input[type="radio"] + label.brown {
+    background-color: brown;
+}
+
+input[type="radio"] + label.black {
+    background-color: black;
+}
+
+
+
+
+

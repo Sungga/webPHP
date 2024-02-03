@@ -637,6 +637,9 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
+
+    transition: all 1s ease-in-out;
 }
 
 .product__left {
@@ -712,4 +715,250 @@
 
 .product__right {
     width: 50%;
+    padding-left: 52px;
+}
+
+.product__right--top {
+    width: 100%;
+}
+
+.product__name h1 {
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.product__price {
+    margin-bottom: 24px;
+}
+
+.product__price strong {
+    font-size: 20px;
+    color: var(--color-bold);
+    margin-right: 8px;
+}
+
+.product__price span {
+    color: var(--color-pale);
+    font-style: italic;
+    text-decoration-line: line-through;
+}
+
+.product__color {
+    margin-bottom: 28px;
+}
+
+.product__color p {
+    font-size: 16px;
+    color: var(--color-bold);
+    margin-bottom: 16px;
+}
+
+.product__color--item {
+    height: 30px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* Ẩn nút radio mặc định */
+input[name="color"] {
+    display: none;
+}
+
+/* Thiết lập kiểu của label để tạo ra một giao diện tương tác như nút radio */
+input[name="color"] + label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #ccc;
+
+    /* margin-right: 4px; */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Khi nút radio được chọn, thay đổi màu nền của label */
+input[name="color"]:checked + label {
+    width: 30px;
+    height: 30px;
+}
+
+.product__size {
+    margin-bottom: 28px;
+}
+
+input[name="size"] {
+    display: none;
+}
+
+input[name="size"] + label {
+    font-size: 16px;
+    display: inline-block;
+    width: 44px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+
+    margin-right: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+input[name="size"]:checked + label {
+    border: 1px solid #000;
+}
+
+.product__quantity {
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.product__quantity label {
+    font-size: 16px;
+    color: var(--color-bold);
+    margin-right: 20px;
+}
+
+.product__quantity--input {
+    position: relative;
+}
+
+.product__quantity input[type="number"] {
+    /* Ẩn các nút tăng giảm trong input type number */
+    -moz-appearance: textfield; /* Firefox */
+
+    text-align: center;
+    padding: 8px 50px;
+    outline: none;
+    border: 1px solid var(--color-medium);
+    border-radius: 16px 0;
+    width: 126px;
+}
+
+/* Firefox chưa hỗ trợ thuộc tính appearance nên cần thêm dòng này */
+.product__quantity input[type="number"]::-webkit-inner-spin-button,
+.product__quantity input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Ẩn các nút tăng giảm trong input type number cho trình duyệt khác */
+.product__quantity input[type="number"] {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.product__quantity span {
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid var(--color-medium);
+    width: 40px;
+}
+
+.product__quantity .increment {
+    position: absolute;
+    right: 0;
+    width: 42px;
+    border-radius: 0 0 16px 0;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.product__quantity .decrement {
+    position: absolute;
+    left: 0;
+    width: 42px;
+    border-radius: 16px 0 0;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.product__action {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.product__action input {
+    width: 160px;
+    font-size: 16px;
+    padding: 16px 28px;
+    border: 1px solid var(--color-bold);
+    outline: none;
+    border-radius: 20px 0;
+    margin-right: 20px;
+
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.product__action--cart,
+.product__action--buy:hover {
+    color: var(--color-bold);
+    background-color: var(--color-white);
+}
+
+.product__action--buy,
+.product__action--cart:hover {
+    color: var(--color-white);
+    background-color: var(--color-bold);
+}
+
+.product__right--bottom {
+    margin-top: 50px;
+    max-height: 180px;
+    overflow: hidden;
+
+    transition: max-height 1s ease-in-out;
+}
+
+.product__right--bottom-title {
+    display: flex;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 20px;
+}
+
+.product__right--bottom h1 {
+    font-size: 16px;
+    border-bottom: 2px solid var(--color-bold);
+    color: var(--color-bold);
+    font-weight: bold;
+    padding: 40px 0 12px;
+}
+
+.product__right--bottom p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: var(--color-bold);
+}
+
+.product__right--collapsible {
+    width: 100%;
+    border-top: 1px solid var(--color-bold);
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+}
+
+.product__right--collapsible .fa-chevron-down {
+    position: absolute;
+    border: 1px solid var(--color-bold);
+    padding: 4px;
+    color: var(--color-bold);
+    border-radius: 50%;
+    top: -14px;
+    background-color: var(--color-white);
+    cursor: pointer;
+    transition: all 1s ease-in-out;
 }

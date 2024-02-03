@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Increment/Decrement Example</title>
+</head>
+<body>
+
+  <label for="numberInput">Number:</label>
+  <input type="number" id="numberInput" name="numberInput" value="0" min="0" max="33" step="1">
+
+  <span class="increment" onclick="increment()">+</span>
+  <span class="decrement" onclick="decrement()">-</span>
+
+  <script>
+    // hàm tăng số lượng áo mua
+    function increment() {
+      var numberInput = document.getElementById('numberInput');
+      var currentValue = parseInt(numberInput.value);
+      var newValue = currentValue + 1;
+
+      // Kiểm tra điều kiện max trước khi tăng giá trị
+      if (currentValue < parseInt(numberInput.max)) {
+        numberInput.value = newValue;
+      }
+    }
+
+    // hàm giảm số lượng áo mua
+    function decrement() {
+      var numberInput = document.getElementById('numberInput');
+      var currentValue = parseInt(numberInput.value);
+
+      // Kiểm tra điều kiện min trước khi giảm giá trị
+      if (currentValue > parseInt(numberInput.min)) {
+        var newValue = currentValue - 1;
+        numberInput.value = newValue;
+      }
+    }
+  </script>
+
+</body>
+</html>
+
