@@ -37,13 +37,22 @@ document.addEventListener("DOMContentLoaded", function() {
         // Lấy phần tử cartSize tương ứng (trong cùng một container hoặc có cách xác định phù hợp)
         let relatedCartSize = this.closest('.list-product__product--cart').querySelector('.list-product__product--size');
 
+        // Code như này nó bị vấn đề chiếm vị trí nhưng không hiện thị
+        // if (relatedCartSize.style.visibility === 'inherit') {
+        //     relatedCartSize.style.visibility = 'hidden';
+        //     relatedCartSize.style.opacity = '0';
+        // } else {
+        //     relatedCartSize.style.opacity = '1';
+        //     relatedCartSize.style.visibility = 'inherit';
+        // }
+
         // Kiểm tra trạng thái hiện tại của cartSize và đảo ngược giá trị display
-        if (relatedCartSize.style.visibility === 'inherit') {
-            relatedCartSize.style.visibility = 'hidden';
+        if (relatedCartSize.style.display === 'block') {
+            relatedCartSize.style.display = 'none';
             relatedCartSize.style.opacity = '0';
         } else {
             relatedCartSize.style.opacity = '1';
-            relatedCartSize.style.visibility = 'inherit';
+            relatedCartSize.style.display = 'block';
         }
     });
     });

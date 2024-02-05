@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./access/css/style.css">
+    <link rel="stylesheet" href="./access/css/base.css">
+</head>
+<body>
+    <div id="admin__top">
+        <div class="grid">
+            <div class="admin__top--container">
+                <div><a href="#">Quản lý sản phẩm</a></div>
+                <div><a href="#">Quản lý đơn hàng</a></div>
+                <div><a href="#">Quay lại trang chủ</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="admin__top--bottom" style="height: 80px;"></div>
+
+    <div class="add-category">
+        <div class="grid">
+            <div class="add-category__container">
+                <div class="admin__left">
+                    <ul>
+                        <h1>Danh mục</h1>
+                        <li><a href="#">Thêm danh mục</a></li>
+                        <li><a href="#">Danh sách danh mục</a></li>
+                        <h1>Loại sản phẩm</h1>
+                        <li><a href="#">Thêm loại sản phẩm</a></li>
+                        <li><a href="#">Danh sách loại sản phẩm</a></li>
+                        <h1>Sản phẩm</h1>
+                        <li><a href="#">Thêm sản phẩm</a></li>
+                        <li><a href="#">Danh sách sản phẩm</a></li>
+                    </ul>
+                </div>
+
+                <div class="admin__right">
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <select name="category" id="">
+                            <option value="category_id">category_name</option>
+                        </select>
+                        <select name="product_type" id="">
+                            <option value="product_type_id">product_type_name</option>
+                        </select>
+                        <label for="product_name">Tên sản phẩm</label>
+                        <input type="text" name="product_name" id="" placeholder="Tên sản phẩm">
+                        <label for="product_price">Giá sản phẩm</label>
+                        <input type="text" name="product_price" id="" placeholder="Giá sản phẩm">
+                        <label for="product_price_new">Giá mới</label>
+                        <input type="text" name="product_price_new" id="">
+                        <label for="product_describe">Mô tả</label>
+                        <textarea name="product_describe" id="" cols="30" rows="20"></textarea>
+                        <label for="product_img">Ảnh sản phẩm</label>
+                        <input type="file" name="product_img" id="">
+                        <label for="product_img_desc">Ảnh mô tả</label>
+                        <input type="file" name="product_img_desc" id="" multiple>
+                        <label for="quantity">Số lượng sản phẩm</label>
+                        <input type="number" name="" id="">
+                        <input type="submit" value="Thêm sản phẩm">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
